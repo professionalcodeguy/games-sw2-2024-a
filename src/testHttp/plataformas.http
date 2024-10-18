@@ -1,0 +1,14 @@
+@url = https://8080-marcoweb-gamessw22024a-zb7sf875f9v.ws-us116.gitpod.io
+
+GET {{url}}/plataformas
+
+###
+POST {{url}}/plataformas
+Content-Type: application/json
+
+{
+    "nome": "Mobile"
+}
+
+###
+GET {{url}}/plataformas/8
