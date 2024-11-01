@@ -1,14 +1,15 @@
 @url = https://8080-professiona-gamessw2202-ed4r61dmxtn.ws-us116.gitpod.io
 
-GET {{url}}/plataformas
+GET {{url}}/jogos
 
 ###
-POST {{url}}/plataformas
+
+POST {{url}}/jogos
 Content-Type: application/json
 
 {
-    "nome": "xbx"
+    "titulo": "Borderlands 3",
+    "plataformas": [
+        {"id": 2}
+    ]
 }
-
-###
-GET {{url}}/plataformas/8

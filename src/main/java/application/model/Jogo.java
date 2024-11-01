@@ -2,6 +2,7 @@ package application.model;
 
 import java.util.Set;
 
+import application.record.JogoDTO;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -25,5 +26,36 @@ public class Jogo {
     @JoinTable(name = "jogos_possuem_plataformas",
         joinColumns = @JoinColumn(name = "id_jogo"),
         inverseJoinColumns = @JoinColumn(name = "id_plataforma"))
-    private Set<Plataforma> plataforma;
+    private Set<Plataforma> plataformas;
+    
+    public Jogo(JogoDTO jogo){
+        this.id = jogo.id();
+        this.titulo = jogo.titulo();
+        this.plataformas = jogo.plataformas();
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public String getTitulo() {
+        return titulo;
+    }
+
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+
+    public Set<Plataforma> getPlataformas() {
+        return plataformas;
+    }
+
+    public void setPlataformas(Set<Plataforma> plataformas) {
+        this.plataformas = plataformas;
+    }
+   
 }
