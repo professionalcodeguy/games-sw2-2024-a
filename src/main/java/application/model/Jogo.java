@@ -57,5 +57,7 @@ public class Jogo {
     public void setPlataformas(Set<Plataforma> plataformas) {
         this.plataformas = plataformas;
     }
+
+    public Jogo(){}
    
 }

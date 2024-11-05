@@ -1,5 +1,4 @@
-@url = https://8080-professiona-gamessw2202-ed4r61dmxtn.ws-us116.gitpod.io
-
+@url = https://8080-professiona-gamessw2202-zcs1bua43sr.ws-us116.gitpod.io
 GET {{url}}/plataformas
 
 ###
@@ -7,7 +6,7 @@ POST {{url}}/plataformas
 Content-Type: application/json
 
 {
-    "nome": "xbx"
+    "nome": "op"
 }
 
 ###
